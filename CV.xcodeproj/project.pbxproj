@@ -14,6 +14,8 @@
 		52F6DD98204BE8340093989C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD97204BE8340093989C /* Assets.xcassets */; };
 		52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD99204BE8340093989C /* LaunchScreen.storyboard */; };
 		52F6DDA6204BE8340093989C /* CVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDA5204BE8340093989C /* CVTests.swift */; };
+		52F6DDB3204BEAB20093989C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDB2204BEAB20093989C /* Coordinator.swift */; };
+		52F6DDB6204BEC780093989C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDB5204BEC780093989C /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		52F6DDA1204BE8340093989C /* CVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F6DDA5204BE8340093989C /* CVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTests.swift; sourceTree = "<group>"; };
 		52F6DDA7204BE8340093989C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F6DDB2204BEAB20093989C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		52F6DDB5204BEC780093989C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,9 @@
 		52F6DD8D204BE8340093989C /* CV */ = {
 			isa = PBXGroup;
 			children = (
+				52F6DDB7204BF1130093989C /* Coordinators */,
+				52F6DDB4204BEC660093989C /* App */,
+				52F6DDB1204BEA9A0093989C /* Protocols */,
 				52F6DD8E204BE8340093989C /* AppDelegate.swift */,
 				52F6DD90204BE8340093989C /* FirstViewController.swift */,
 				52F6DD92204BE8340093989C /* SecondViewController.swift */,
@@ -97,6 +104,29 @@
 				52F6DDA7204BE8340093989C /* Info.plist */,
 			);
 			path = CVTests;
+			sourceTree = "<group>";
+		};
+		52F6DDB1204BEA9A0093989C /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				52F6DDB2204BEAB20093989C /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		52F6DDB4204BEC660093989C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52F6DDB5204BEC780093989C /* AppCoordinator.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52F6DDB7204BF1130093989C /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F6DDB3204BEAB20093989C /* Coordinator.swift in Sources */,
 				52F6DD93204BE8340093989C /* SecondViewController.swift in Sources */,
+				52F6DDB6204BEC780093989C /* AppCoordinator.swift in Sources */,
 				52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */,
 				52F6DD91204BE8340093989C /* FirstViewController.swift in Sources */,
 			);
