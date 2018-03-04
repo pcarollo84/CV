@@ -17,6 +17,7 @@
 		52F6DDBF204C00780093989C /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDBE204C00780093989C /* Section.swift */; };
 		52F6DDC1204C00FC0093989C /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDC0204C00FC0093989C /* Area.swift */; };
 		52F6DDC3204C01370093989C /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDC2204C01370093989C /* Root.swift */; };
+		52F6DDC6204C02600093989C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDC5204C02600093989C /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		52F6DDBE204C00780093989C /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
 		52F6DDC0204C00FC0093989C /* Area.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		52F6DDC2204C01370093989C /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
+		52F6DDC5204C02600093989C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		52F6DD8D204BE8340093989C /* CV */ = {
 			isa = PBXGroup;
 			children = (
+				52F6DDC4204C018E0093989C /* Services */,
 				52F6DDBB204BF81A0093989C /* Models */,
 				52F6DDB7204BF1130093989C /* Coordinators */,
 				52F6DDB4204BEC660093989C /* App */,
@@ -140,6 +143,14 @@
 				52F6DDC2204C01370093989C /* Root.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		52F6DDC4204C018E0093989C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52F6DDC5204C02600093989C /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,6 +263,7 @@
 				52F6DDB6204BEC780093989C /* AppCoordinator.swift in Sources */,
 				52F6DDC1204C00FC0093989C /* Area.swift in Sources */,
 				52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */,
+				52F6DDC6204C02600093989C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
