@@ -17,13 +17,17 @@ protocol DataServiceProtocol {
 struct DataService: DataServiceProtocol {
     
     enum Error: Swift.Error {
+        case missingJSON
         case invalidJSON
     }
     
     static let shared: DataService = DataService()
     
-    func getJSON() -> String {
-        return ""
+    func getJSON(bundle: Bundle = Bundle.main) throws -> String {
+        guard let url = bundle.url(forResource: "data", withExtension: "json") else {
+            throw Error.missingJSON
+        }
+        return try String(contentsOf: url)
     }
 
     func getRoot(json: String) throws -> Root {

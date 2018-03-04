@@ -77,4 +77,13 @@ class DataServiceTests: XCTestCase {
 
     }
     
+    func testDataServiceGetRootFromValidButWrongJSON_ReturnNilRootObject() {
+        
+        let json = TestJSON.validJSONButWrong
+        let root = try? DataService.shared.getRoot(json: json)
+        
+        XCTAssertNil(root)
+        
+    }
+    
 }

@@ -61,5 +61,22 @@ class TestJSON {
         ]
     }
     """
+ 
+    static let validJSONButWrong: String = """
+    {
+        books: [
+            {
+                "name": "Game of thrones"
+            }
+        ]
+    }
+    """
+    
+    static let invalidJSON: String = """
+    cars: [
+        "make" : "Ferrari",
+        "make" : "Jaguar"
+    ]
+    """
     
 }
