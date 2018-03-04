@@ -18,7 +18,7 @@ class TestJSON {
                 "sections": [
                     {
                         "name": "Personal Details",
-                        "units": [
+                        "rows": [
                             {
                                 "type": "image",
                                 "title": "",
@@ -33,11 +33,11 @@ class TestJSON {
                 "sections": [
                     {
                         "name": "iOS Developer",
-                        "units": [
+                        "rows": [
                             {
                                 "type": "job",
-                                "title": "Company",
-                                "details": "PocketSizeMedia Limited"
+                                "title": "company",
+                                "details": "TheFakeCompany Limited"
                             }
                         ]
                     }
@@ -48,7 +48,7 @@ class TestJSON {
                 "sections": [
                     {
                         "name": "Info",
-                        "units": [
+                        "rows": [
                             {
                                 "type": "description",
                                 "title": "app version",

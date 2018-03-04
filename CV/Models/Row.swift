@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum UnitType: String, Codable {
+enum RowType: String, Codable {
     case description = "description"
     case image = "image"
     case job = "job"
@@ -16,7 +16,7 @@ enum UnitType: String, Codable {
 
 protocol RowProtocol {
     
-    var type: UnitType { get }
+    var type: RowType { get }
     var title: String { get }
     var details: String { get }
     
@@ -24,7 +24,7 @@ protocol RowProtocol {
 
 struct Row: RowProtocol, Codable {
     
-    var type: UnitType
+    var type: RowType
     var title: String
     var details: String
     

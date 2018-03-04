@@ -11,6 +11,6 @@ import Foundation
 struct Section: Codable {
     
     var name: String
-    var units: [Row]
+    var rows: [Row]
     
 }
