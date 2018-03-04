@@ -8,14 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD8E204BE8340093989C /* AppDelegate.swift */; };
-		52F6DD91204BE8340093989C /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD90204BE8340093989C /* FirstViewController.swift */; };
-		52F6DD93204BE8340093989C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD92204BE8340093989C /* SecondViewController.swift */; };
-		52F6DD96204BE8340093989C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD94204BE8340093989C /* Main.storyboard */; };
 		52F6DD98204BE8340093989C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD97204BE8340093989C /* Assets.xcassets */; };
 		52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD99204BE8340093989C /* LaunchScreen.storyboard */; };
-		52F6DDA6204BE8340093989C /* CVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDA5204BE8340093989C /* CVTests.swift */; };
 		52F6DDB3204BEAB20093989C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDB2204BEAB20093989C /* Coordinator.swift */; };
 		52F6DDB6204BEC780093989C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDB5204BEC780093989C /* AppCoordinator.swift */; };
+		52F6DDBA204BF1970093989C /* AppCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDB9204BF1970093989C /* AppCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,17 +28,15 @@
 /* Begin PBXFileReference section */
 		52F6DD8B204BE8340093989C /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F6DD8E204BE8340093989C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		52F6DD90204BE8340093989C /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		52F6DD92204BE8340093989C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		52F6DD95204BE8340093989C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		52F6DD97204BE8340093989C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		52F6DD9A204BE8340093989C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52F6DD9C204BE8340093989C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52F6DDA1204BE8340093989C /* CVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		52F6DDA5204BE8340093989C /* CVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVTests.swift; sourceTree = "<group>"; };
 		52F6DDA7204BE8340093989C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52F6DDB2204BEAB20093989C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		52F6DDB5204BEC780093989C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		52F6DDB8204BF1970093989C /* CVTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CVTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		52F6DDB9204BF1970093989C /* AppCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,9 +82,6 @@
 				52F6DDB4204BEC660093989C /* App */,
 				52F6DDB1204BEA9A0093989C /* Protocols */,
 				52F6DD8E204BE8340093989C /* AppDelegate.swift */,
-				52F6DD90204BE8340093989C /* FirstViewController.swift */,
-				52F6DD92204BE8340093989C /* SecondViewController.swift */,
-				52F6DD94204BE8340093989C /* Main.storyboard */,
 				52F6DD97204BE8340093989C /* Assets.xcassets */,
 				52F6DD99204BE8340093989C /* LaunchScreen.storyboard */,
 				52F6DD9C204BE8340093989C /* Info.plist */,
@@ -100,8 +92,9 @@
 		52F6DDA4204BE8340093989C /* CVTests */ = {
 			isa = PBXGroup;
 			children = (
-				52F6DDA5204BE8340093989C /* CVTests.swift */,
 				52F6DDA7204BE8340093989C /* Info.plist */,
+				52F6DDB9204BF1970093989C /* AppCoordinatorTests.swift */,
+				52F6DDB8204BF1970093989C /* CVTests-Bridging-Header.h */,
 			);
 			path = CVTests;
 			sourceTree = "<group>";
@@ -183,6 +176,7 @@
 					};
 					52F6DDA0204BE8340093989C = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 52F6DD8A204BE8340093989C;
 					};
@@ -214,7 +208,6 @@
 			files = (
 				52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */,
 				52F6DD98204BE8340093989C /* Assets.xcassets in Resources */,
-				52F6DD96204BE8340093989C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,10 +226,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F6DDB3204BEAB20093989C /* Coordinator.swift in Sources */,
-				52F6DD93204BE8340093989C /* SecondViewController.swift in Sources */,
 				52F6DDB6204BEC780093989C /* AppCoordinator.swift in Sources */,
 				52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */,
-				52F6DD91204BE8340093989C /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,7 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				52F6DDA6204BE8340093989C /* CVTests.swift in Sources */,
+				52F6DDBA204BF1970093989C /* AppCoordinatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,14 +250,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		52F6DD94204BE8340093989C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				52F6DD95204BE8340093989C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		52F6DD99204BE8340093989C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -418,11 +401,14 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paolocarollo.CVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CVTests/CVTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CV.app/CV";
@@ -434,11 +420,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CVTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paolocarollo.CVTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CVTests/CVTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CV.app/CV";
