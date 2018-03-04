@@ -1,0 +1,74 @@
+{
+    "areas": [
+        {
+            "name": "me",
+            "sections": [
+                {
+                    "name": "Personal Details",
+                    "units": [
+                        {
+                            "type": "image",
+                            "title": "",
+                            "details": "profile.png"
+                        },
+                        {
+                            "type": "description",
+                            "title": "Name",
+                            "details": "Paolo Carollo"
+                        },
+                        {
+                            "type": "description",
+                            "title": "Date of Birth",
+                            "details": "30/04/1984"
+                        },
+                        {
+                            "type": "description",
+                            "title": "Nationality:",
+                            "details": "Italian"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "experience",
+            "sections": [
+                {
+                    "name": "iOS Developer",
+                    "units": [
+                        {
+                            "type": "job",
+                            "title": "Company",
+                            "details": "PocketSizeMedia Limited"
+                        },
+                        {
+                            "type": "job",
+                            "title": "Period",
+                            "details": "Sep 2016 - Feb 2018"
+                        },
+                        {
+                            "type": "job",
+                            "title": "Role",
+                            "details": "Worked on business apps for iOS with a small team of developers who embrace the fast moving mobile market and tech. Also responsible for the CI/CD solution using Xcode Server"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "settings",
+            "sections": [
+                {
+                    "name": "Info",
+                    "units": [
+                        {
+                            "type": "description",
+                            "title": "app version",
+                            "details": "$(app_version)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
