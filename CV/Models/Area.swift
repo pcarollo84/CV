@@ -10,7 +10,7 @@ import Foundation
 
 struct Area: Codable {
     
-    var title: String
+    var name: String
     var sections: [Section]
     
 }

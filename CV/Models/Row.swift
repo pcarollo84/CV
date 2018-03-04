@@ -1,5 +1,5 @@
 //
-//  Unit.swift
+//  Row.swift
 //  CV
 //
 //  Created by Paolo Carollo on 04/03/2018.
@@ -10,10 +10,11 @@ import Foundation
 
 enum UnitType: String, Codable {
     case description = "description"
+    case image = "image"
     case job = "job"
 }
 
-protocol UnitProtocol {
+protocol RowProtocol {
     
     var type: UnitType { get }
     var title: String { get }
@@ -21,7 +22,7 @@ protocol UnitProtocol {
     
 }
 
-struct Unit: UnitProtocol, Codable {
+struct Row: RowProtocol, Codable {
     
     var type: UnitType
     var title: String
