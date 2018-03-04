@@ -23,8 +23,8 @@ struct DataService: DataServiceProtocol {
     
     static let shared: DataService = DataService()
     
-    func getJSON(bundle: Bundle = Bundle.main) throws -> String {
-        guard let url = bundle.url(forResource: "data", withExtension: "json") else {
+    func getJSON(with name: String, bundle: Bundle = Bundle.main) throws -> String {
+        guard let url = bundle.url(forResource: name, withExtension: "json") else {
             throw Error.missingJSON
         }
         return try String(contentsOf: url)

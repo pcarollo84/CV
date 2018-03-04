@@ -21,6 +21,7 @@
 		52F6DDC8204C08070093989C /* DataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDC7204C08070093989C /* DataServiceTests.swift */; };
 		52F6DDCC204C0ADC0093989C /* TestJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDCB204C0ADB0093989C /* TestJSON.swift */; };
 		52F6DDD4204C13E50093989C /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DDD3204C13E50093989C /* data.json */; };
+		52F6DDD6204C15710093989C /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DDD5204C15710093989C /* test.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		52F6DDC7204C08070093989C /* DataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceTests.swift; sourceTree = "<group>"; };
 		52F6DDCB204C0ADB0093989C /* TestJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestJSON.swift; sourceTree = "<group>"; };
 		52F6DDD3204C13E50093989C /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		52F6DDD5204C15710093989C /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 		52F6DDA4204BE8340093989C /* CVTests */ = {
 			isa = PBXGroup;
 			children = (
+				52F6DDD5204C15710093989C /* test.json */,
 				52F6DDCB204C0ADB0093989C /* TestJSON.swift */,
 				52F6DDA7204BE8340093989C /* Info.plist */,
 				52F6DDB9204BF1970093989C /* AppCoordinatorTests.swift */,
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F6DDD6204C15710093989C /* test.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

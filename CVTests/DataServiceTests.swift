@@ -20,6 +20,23 @@ class DataServiceTests: XCTestCase {
         
         super.tearDown()
     }
+    
+    //  MARK: - Get JSON
+    
+    func testGetJSONFromTestBundle() {
+        
+        let json = try? DataService.shared.getJSON(with: "test", bundle: Bundle(for: DataServiceTests.classForCoder()))
+        XCTAssertNotNil(json)
+    }
+    
+    func testGetJSONWithWrongName_ThrowMissingJSONError() {
+        
+        XCTAssertThrowsError(try DataService.shared.getJSON(with: "data", bundle: Bundle(for: DataServiceTests.classForCoder()))) { (error) in
+            XCTAssertEqual(error as? DataService.Error, DataService.Error.missingJSON)
+        }
+    }
+    
+    //  MARK: - Decoding
 
     func testDataServiceGetRootFromValidJSON_ReturnRootObjectNonNil() {
      
