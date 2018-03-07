@@ -7,10 +7,15 @@
 //
 
 import Foundation
+import CocoaLumberjack
 
 protocol DataServiceProtocol {
     
-    func getRoot(json: String) throws -> Root
+    var baseURL: URL { get }
+    
+    init(baseURL: URL)
+    
+    func areas(with name: String, completion: @escaping ([Area], Error?) -> ())
     
 }
 
@@ -21,24 +26,44 @@ struct DataService: DataServiceProtocol {
         case invalidJSON
     }
     
-    static let shared: DataService = DataService()
+    private(set) var baseURL: URL
     
-    func getJSON(with name: String, bundle: Bundle = Bundle.main) throws -> String {
-        guard let url = bundle.url(forResource: name, withExtension: "json") else {
-            throw Error.missingJSON
-        }
-        return try String(contentsOf: url)
+    init(baseURL: URL) {
+        self.baseURL = baseURL
     }
-
-    func getRoot(json: String) throws -> Root {
+    
+    func areas(with name: String, completion: @escaping ([Area], Swift.Error?) -> ())  {
         
-        guard let jsonData = json.data(using: .utf8) else {
-            throw Error.invalidJSON
+        let request = URLRequest(url: baseURL.appendingPathComponent(name))
+        let session = URLSession()
+        
+        session.dataTask(with: request) { (data, response, error) in
+        
+            guard let data = data else {
+                completion([], Error.missingJSON)
+                return
+            }
+            
+            do {
+                
+                let root = try JSONDecoder().decode(Root.self, from: data)
+                completion(root.areas, nil)
+                
+            } catch {
+                
+                if let json = String(data: data, encoding: .utf8) {
+                    DDLogError("Error on decoding json: \(json)")
+                } else {
+                    DDLogError("Data is corrupted")
+                }
+                
+                completion([], Error.invalidJSON)
+                return
+                
+            }
+            
         }
         
-        return try JSONDecoder().decode(Root.self, from: jsonData)
-        
     }
-
     
 }

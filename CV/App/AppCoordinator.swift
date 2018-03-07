@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import CocoaLumberjack
 
 struct AppCoordinator: Coordinator {
     
@@ -18,6 +19,11 @@ struct AppCoordinator: Coordinator {
         
         self.window = window
         self.tabBarController = UITabBarController()
+        
+        //  Setup 3rd party Libs
+        
+        //  CocoaLumberjack
+        DDLog.add(DDTTYLogger.sharedInstance) // Xcode console
         
     }
     
