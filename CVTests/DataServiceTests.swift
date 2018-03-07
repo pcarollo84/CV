@@ -29,6 +29,23 @@ class DataServiceTests: XCTestCase {
         
     }
     
+    func testGetAreasWithExistingName_ReturnInCompletionNonNilAreas() {
+        
+        let expectation = XCTestExpectation(description: "Get Areas from json file in Test Bundle")
+        
+        let bundle = Bundle(for: DataServiceTests.classForCoder())
+        let dataService = DataService(baseURL: bundle.bundleURL)
+        dataService.areas(with: "test", sessionConfiguration: URLSessionConfiguration.ephemeral) { (areas, _) in
+
+            XCTAssertNotNil(areas)
+            expectation.fulfill()
+
+        }
+        
+        wait(for: [expectation], timeout: 10.0)
+        
+    }
+    
     //  MARK: - Get JSON
     
 //    func testGetJSONFromTestBundle() {

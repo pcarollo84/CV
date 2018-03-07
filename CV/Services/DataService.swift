@@ -15,7 +15,7 @@ protocol DataServiceProtocol {
     
     init(baseURL: URL)
     
-    func areas(with name: String, completion: @escaping ([Area], Error?) -> ())
+    func areas(with name: String, sessionConfiguration: URLSessionConfiguration, completion: @escaping ([Area], Error?) -> ())
     
 }
 
@@ -32,13 +32,13 @@ struct DataService: DataServiceProtocol {
         self.baseURL = baseURL
     }
     
-    func areas(with name: String, completion: @escaping ([Area], Swift.Error?) -> ())  {
+    func areas(with name: String, sessionConfiguration: URLSessionConfiguration = URLSessionConfiguration.default, completion: @escaping ([Area], Swift.Error?) -> ())  {
         
         let request = URLRequest(url: baseURL.appendingPathComponent(name))
-        let session = URLSession()
+        let session = URLSession(configuration: sessionConfiguration)
         
-        session.dataTask(with: request) { (data, response, error) in
-        
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            
             guard let data = data else {
                 completion([], Error.missingJSON)
                 return
@@ -63,6 +63,8 @@ struct DataService: DataServiceProtocol {
             }
             
         }
+        
+        dataTask.resume()
         
     }
     
