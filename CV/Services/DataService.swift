@@ -39,6 +39,9 @@ struct DataService: DataServiceProtocol {
         
         let dataTask = session.dataTask(with: request) { (data, response, error) in
             
+            //  TODO: Add session as protocol in the params so it can be mocked
+            //  TODO: when starting using real REST api add test for status response
+            
             guard let data = data else {
                 completion([], Error.missingJSON)
                 return
