@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8E4B2050057F006F3E0C /* Deserializer.swift */; };
+		52E9C7952050386E0061CA0B /* DeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9C7942050386E0061CA0B /* DeserializerTests.swift */; };
 		52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD8E204BE8340093989C /* AppDelegate.swift */; };
 		52F6DD98204BE8340093989C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD97204BE8340093989C /* Assets.xcassets */; };
 		52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD99204BE8340093989C /* LaunchScreen.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		0139AA408EB6234EF406B86C /* Pods_CV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52CA8E4B2050057F006F3E0C /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
+		52E9C7942050386E0061CA0B /* DeserializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializerTests.swift; sourceTree = "<group>"; };
 		52F6DD8B204BE8340093989C /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F6DD8E204BE8340093989C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F6DD97204BE8340093989C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		52E9C793205038530061CA0B /* Deserializers */ = {
+			isa = PBXGroup;
+			children = (
+				52E9C7942050386E0061CA0B /* DeserializerTests.swift */,
+			);
+			path = Deserializers;
+			sourceTree = "<group>";
+		};
 		52F6DD82204BE8340093989C = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				52CA8E4E20500750006F3E0C /* App */,
+				52E9C793205038530061CA0B /* Deserializers */,
 				52CA8E4F2050075E006F3E0C /* JSON */,
 				52CA8E4D20500742006F3E0C /* Services */,
 				52F6DDA7204BE8340093989C /* Info.plist */,
@@ -410,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E9C7952050386E0061CA0B /* DeserializerTests.swift in Sources */,
 				52F6DDBA204BF1970093989C /* AppCoordinatorTests.swift in Sources */,
 				52F6DDC8204C08070093989C /* DataServiceTests.swift in Sources */,
 				52F6DDCC204C0ADC0093989C /* TestJSON.swift in Sources */,

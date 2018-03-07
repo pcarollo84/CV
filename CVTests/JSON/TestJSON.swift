@@ -79,4 +79,43 @@ class TestJSON {
     ]
     """
     
+    static let validAreaJSON = """
+    {
+        "name": "me",
+        "sections": [
+                {
+                    "name": "Personal Details",
+                    "rows": [
+                        {
+                            "type": "image",
+                            "title": "",
+                            "details": "profile.png"
+                        }
+                    ]
+                }
+            ]
+    }
+    """
+    
+    static let validSectionJSON = """
+    {
+        "name": "Personal Details",
+        "rows": [
+            {
+                "type": "image",
+                "title": "",
+                "details": "profile.png"
+            }
+        ]
+    }
+    """
+    
+    static let validRowJSON = """
+    {
+        "type": "image",
+        "title": "",
+        "details": "profile.png"
+    }
+    """
+    
 }
