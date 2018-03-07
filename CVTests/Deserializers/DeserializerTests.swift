@@ -26,8 +26,8 @@ class DeserializerTests: XCTestCase {
         let data = TestJSON.validJSONWithThreeAreasOneSectionEachOneRowEach.data(using: .utf8)
         let root: Root = try! Deserializer.shared.deserialize(data: data!)
         
+        XCTAssertNotNil(root)
         XCTAssertEqual(root.areas.count, 3)
-        
         
     }
     
@@ -61,10 +61,5 @@ class DeserializerTests: XCTestCase {
         XCTAssertEqual(row.details, "profile.png")
         
     }
-    
-    func testDeserializeUnits_FromValidJSON_ReturnListOfUnitsWithExpectedValues() {
-        
-    }
-
     
 }

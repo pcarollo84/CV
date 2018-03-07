@@ -15,10 +15,14 @@ struct AppCoordinator: Coordinator {
     private(set) var window: UIWindow?
     private(set) var tabBarController: UITabBarController
     
+    private var dataService: DataService
+    
     init(in window: UIWindow?) {
         
         self.window = window
         self.tabBarController = UITabBarController()
+        
+        self.dataService = DataService(baseURL: Bundle.main.bundleURL)
         
         //  Setup 3rd party Libs
         
@@ -28,22 +32,37 @@ struct AppCoordinator: Coordinator {
     }
     
     func start() {
-        
-        setup(tabBarController: tabBarController)
-        self.window?.rootViewController = tabBarController
+
+        self.window?.rootViewController = self.tabBarController
         self.window?.makeKeyAndVisible()
+        
+        //  TODO: Add a UIActivityIndicator
+        
+        dataService.areas(with: "data.json") { (areas, error) in
+            
+            DispatchQueue.main.async {
+
+                self.setup(tabBarController: self.tabBarController, areas: areas)
+
+            }
+            
+        }
         
     }
     
-    func setup(tabBarController: UITabBarController) {
+    func setup(tabBarController: UITabBarController, areas: [Area]) {
+
+        var viewControllers: [UIViewController] = []
         
-        let viewController1 = UIViewController()
-        viewController1.title = "title1"
+        for area in areas {
+            
+            let viewController = UIViewController()
+            viewController.title = area.name
+            
+            viewControllers.append(viewController)
+        }
         
-        let viewController2 = UIViewController()
-        viewController2.title = "title2"
-        
-        tabBarController.setViewControllers([viewController1, viewController2], animated: false)
+        tabBarController.setViewControllers(viewControllers, animated: false)
         
     }
     
