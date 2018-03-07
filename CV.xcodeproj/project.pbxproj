@@ -98,6 +98,31 @@
 			path = Deserializers;
 			sourceTree = "<group>";
 		};
+		52CA8E4D20500742006F3E0C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				52F6DDC7204C08070093989C /* DataServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		52CA8E4E20500750006F3E0C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				52F6DDB9204BF1970093989C /* AppCoordinatorTests.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		52CA8E4F2050075E006F3E0C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				52F6DDD5204C15710093989C /* test.json */,
+				52F6DDCB204C0ADB0093989C /* TestJSON.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 		52F6DD82204BE8340093989C = {
 			isa = PBXGroup;
 			children = (
@@ -138,12 +163,11 @@
 		52F6DDA4204BE8340093989C /* CVTests */ = {
 			isa = PBXGroup;
 			children = (
-				52F6DDD5204C15710093989C /* test.json */,
-				52F6DDCB204C0ADB0093989C /* TestJSON.swift */,
+				52CA8E4E20500750006F3E0C /* App */,
+				52CA8E4F2050075E006F3E0C /* JSON */,
+				52CA8E4D20500742006F3E0C /* Services */,
 				52F6DDA7204BE8340093989C /* Info.plist */,
-				52F6DDB9204BF1970093989C /* AppCoordinatorTests.swift */,
 				52F6DDB8204BF1970093989C /* CVTests-Bridging-Header.h */,
-				52F6DDC7204C08070093989C /* DataServiceTests.swift */,
 			);
 			path = CVTests;
 			sourceTree = "<group>";
