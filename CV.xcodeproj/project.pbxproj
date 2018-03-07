@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8E4B2050057F006F3E0C /* Deserializer.swift */; };
 		52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD8E204BE8340093989C /* AppDelegate.swift */; };
 		52F6DD98204BE8340093989C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD97204BE8340093989C /* Assets.xcassets */; };
 		52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD99204BE8340093989C /* LaunchScreen.storyboard */; };
@@ -37,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0139AA408EB6234EF406B86C /* Pods_CV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52CA8E4B2050057F006F3E0C /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
 		52F6DD8B204BE8340093989C /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F6DD8E204BE8340093989C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F6DD97204BE8340093989C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +88,14 @@
 				0139AA408EB6234EF406B86C /* Pods_CV.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52CA8E46205004B3006F3E0C /* Deserializers */ = {
+			isa = PBXGroup;
+			children = (
+				52CA8E4B2050057F006F3E0C /* Deserializer.swift */,
+			);
+			path = Deserializers;
 			sourceTree = "<group>";
 		};
 		52F6DD82204BE8340093989C = {
@@ -164,6 +174,7 @@
 		52F6DDBB204BF81A0093989C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				52CA8E46205004B3006F3E0C /* Deserializers */,
 				52F6DDBC204BFE060093989C /* Row.swift */,
 				52F6DDBE204C00780093989C /* Section.swift */,
 				52F6DDC0204C00FC0093989C /* Area.swift */,
@@ -366,6 +377,7 @@
 				52F6DDB6204BEC780093989C /* AppCoordinator.swift in Sources */,
 				52F6DDC1204C00FC0093989C /* Area.swift in Sources */,
 				52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */,
+				52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */,
 				52F6DDC6204C02600093989C /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

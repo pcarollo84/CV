@@ -46,15 +46,15 @@ struct DataService: DataServiceProtocol {
             
             do {
                 
-                let root = try JSONDecoder().decode(Root.self, from: data)
+                let root: Root = try Deserializer.shared.deserialize(data: data)
                 completion(root.areas, nil)
                 
             } catch {
                 
                 if let json = String(data: data, encoding: .utf8) {
-                    DDLogError("Error on decoding json: \(json)")
+                    DDLogError("Error on decoding json: \(json). \(error.localizedDescription)")
                 } else {
-                    DDLogError("Data is corrupted")
+                    DDLogError("Data is corrupted. \(error.localizedDescription)")
                 }
                 
                 completion([], Error.invalidJSON)
