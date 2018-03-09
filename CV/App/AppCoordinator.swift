@@ -36,6 +36,10 @@ class AppCoordinator: Coordinator {
             
             self?.dataService.areas(with: "data.json") { (areas, error) in
                 
+                guard areas.count > 0 else {
+                    return
+                }
+                
                 DispatchQueue.main.async {
                     self?.pushTabCoordinator(areas: areas)
                 }
@@ -46,7 +50,21 @@ class AppCoordinator: Coordinator {
         
         self.startViewController.wrongButtonSelected = { [weak self] in
             
-            self?.navigationController.pushViewController(WrongViewController(), animated: true)
+            self?.dataService.areas(with: "wrong.json", completion: { (areas, error) in
+                
+                guard let _ = error else {
+                    return
+                }
+                
+                DispatchQueue.main.async {
+                    
+                    self?.navigationController.pushViewController(WrongViewController(), animated: true)
+                    
+                }
+                
+            })
+            
+            
             
         }
         
