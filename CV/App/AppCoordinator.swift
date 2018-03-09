@@ -13,8 +13,6 @@ import CocoaLumberjack
 class AppCoordinator: Coordinator {
     
     private(set) var window: UIWindow?
-//    private(set) var tabBarController: UITabBarController
-    
     private(set) var navigationController: UINavigationController
     private(set) var startViewController: StartViewController
     
@@ -46,6 +44,12 @@ class AppCoordinator: Coordinator {
             
         }
         
+        self.startViewController.wrongButtonSelected = { [weak self] in
+            
+            self?.navigationController.pushViewController(WrongViewController(), animated: true)
+            
+        }
+        
         //  Setup 3rd party Libs
         //  CocoaLumberjack
         DDLog.add(DDTTYLogger.sharedInstance) // Xcode console
@@ -56,9 +60,6 @@ class AppCoordinator: Coordinator {
 
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
-        
-        //  TODO: Add a UIActivityIndicator
-      
         
     }
 

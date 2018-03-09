@@ -28,7 +28,13 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        correctButton.layer.cornerRadius = 6
+        correctButton.backgroundColor = UIColor.themeColour
+        correctButton.tintColor = UIColor.white
+        
+        wrongButton.layer.cornerRadius = 6
+        wrongButton.backgroundColor = UIColor.themeColour
+        wrongButton.tintColor = UIColor.white
     }
 
     override func didReceiveMemoryWarning() {

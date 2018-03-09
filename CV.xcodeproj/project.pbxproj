@@ -25,6 +25,8 @@
 		52EE27D72053039B000DC290 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE27D62053039B000DC290 /* TabCoordinator.swift */; };
 		52EE27DA20530659000DC290 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE27D820530659000DC290 /* StartViewController.swift */; };
 		52EE27DB20530659000DC290 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EE27D920530659000DC290 /* StartViewController.xib */; };
+		52EE27DE20531079000DC290 /* WrongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE27DC20531079000DC290 /* WrongViewController.swift */; };
+		52EE27DF20531079000DC290 /* WrongViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EE27DD20531079000DC290 /* WrongViewController.xib */; };
 		52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD8E204BE8340093989C /* AppDelegate.swift */; };
 		52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD99204BE8340093989C /* LaunchScreen.storyboard */; };
 		52F6DDB3204BEAB20093989C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDB2204BEAB20093989C /* Coordinator.swift */; };
@@ -72,6 +74,8 @@
 		52EE27D62053039B000DC290 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
 		52EE27D820530659000DC290 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		52EE27D920530659000DC290 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
+		52EE27DC20531079000DC290 /* WrongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrongViewController.swift; sourceTree = "<group>"; };
+		52EE27DD20531079000DC290 /* WrongViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WrongViewController.xib; sourceTree = "<group>"; };
 		52F6DD8B204BE8340093989C /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F6DD8E204BE8340093989C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F6DD9A204BE8340093989C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				5222B7BD2050972F000D4EBB /* AreaViewController.xib */,
 				52EE27D820530659000DC290 /* StartViewController.swift */,
 				52EE27D920530659000DC290 /* StartViewController.xib */,
+				52EE27DC20531079000DC290 /* WrongViewController.swift */,
+				52EE27DD20531079000DC290 /* WrongViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -409,6 +415,7 @@
 			files = (
 				52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */,
 				52F6DDD4204C13E50093989C /* data.json in Resources */,
+				52EE27DF20531079000DC290 /* WrongViewController.xib in Resources */,
 				52EE27DB20530659000DC290 /* StartViewController.xib in Resources */,
 				523A5E3420528CE900F36A23 /* profile.png in Resources */,
 				523A5E30205287D800F36A23 /* ImageTableViewCell.xib in Resources */,
@@ -504,6 +511,7 @@
 				52F6DDC1204C00FC0093989C /* Area.swift in Sources */,
 				52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */,
 				52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */,
+				52EE27DE20531079000DC290 /* WrongViewController.swift in Sources */,
 				52F6DDC6204C02600093989C /* DataService.swift in Sources */,
 				52CA92482052ED7200A46063 /* ColorExtensions.swift in Sources */,
 			);

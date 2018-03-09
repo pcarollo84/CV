@@ -29,8 +29,8 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="R8j-QR-OKX">
-                    <rect key="frame" x="104.5" y="283.5" width="166" height="100"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R8j-QR-OKX">
+                    <rect key="frame" x="104.5" y="273.5" width="166" height="120"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHF-8e-6UU">
                             <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
@@ -43,7 +43,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3f-uF-Di8">
-                            <rect key="frame" x="0.0" y="50" width="166" height="50"/>
+                            <rect key="frame" x="0.0" y="70" width="166" height="50"/>
                             <state key="normal" title="Load with Wrong JSON"/>
                             <connections>
                                 <action selector="handleWrongButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="BxP-gl-VKm"/>
