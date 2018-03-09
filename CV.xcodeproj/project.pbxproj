@@ -20,6 +20,7 @@
 		523A5E402052A88A00F36A23 /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A5E3E2052A88A00F36A23 /* LinkTableViewCell.swift */; };
 		523A5E412052A88A00F36A23 /* LinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E3F2052A88A00F36A23 /* LinkTableViewCell.xib */; };
 		52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8E4B2050057F006F3E0C /* Deserializer.swift */; };
+		52CA92482052ED7200A46063 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA92472052ED7200A46063 /* ColorExtensions.swift */; };
 		52E9C7952050386E0061CA0B /* DeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9C7942050386E0061CA0B /* DeserializerTests.swift */; };
 		52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD8E204BE8340093989C /* AppDelegate.swift */; };
 		52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD99204BE8340093989C /* LaunchScreen.storyboard */; };
@@ -63,6 +64,7 @@
 		523A5E3E2052A88A00F36A23 /* LinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTableViewCell.swift; sourceTree = "<group>"; };
 		523A5E3F2052A88A00F36A23 /* LinkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkTableViewCell.xib; sourceTree = "<group>"; };
 		52CA8E4B2050057F006F3E0C /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
+		52CA92472052ED7200A46063 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		52E9C7942050386E0061CA0B /* DeserializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializerTests.swift; sourceTree = "<group>"; };
 		52F6DD8B204BE8340093989C /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F6DD8E204BE8340093989C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -179,6 +181,14 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		52CA92462052ED6000A46063 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				52CA92472052ED7200A46063 /* ColorExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		52E9C793205038530061CA0B /* Deserializers */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +220,7 @@
 		52F6DD8D204BE8340093989C /* CV */ = {
 			isa = PBXGroup;
 			children = (
+				52CA92462052ED6000A46063 /* Extensions */,
 				52F6DDD2204C139D0093989C /* Resources */,
 				52F6DDC4204C018E0093989C /* Services */,
 				52F6DDBB204BF81A0093989C /* Models */,
@@ -482,6 +493,7 @@
 				52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */,
 				52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */,
 				52F6DDC6204C02600093989C /* DataService.swift in Sources */,
+				52CA92482052ED7200A46063 /* ColorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

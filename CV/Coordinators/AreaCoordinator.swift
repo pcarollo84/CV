@@ -18,6 +18,7 @@ struct AreaCoordinator: Coordinator {
     
     private var navigationController: UINavigationController
     private var areaDatasource: AreaDatasource
+    private var rootViewController: UIViewController
     
     init(area: Area) {
         self.area = area
@@ -25,17 +26,19 @@ struct AreaCoordinator: Coordinator {
         
         self.navigationController = UINavigationController()
         self.navigationController.navigationBar.prefersLargeTitles = true
+        self.navigationController.title = area.name.capitalized
+        self.navigationController.tabBarItem.image = UIImage(named: area.name.lowercased())
+
+        let viewController = AreaViewController(datasource: areaDatasource)
+        viewController.title = area.name.capitalized
+        self.rootViewController = viewController
+        
     }
     
     func start() {
     
-        let viewController = AreaViewController(datasource: areaDatasource)
-        viewController.title = area.name.capitalized
-        navigationController.title = area.name.capitalized
-        navigationController.tabBarItem.image = UIImage(named: area.name.lowercased())
-        navigationController.setViewControllers([viewController], animated: false)
+        self.navigationController.setViewControllers([rootViewController], animated: false)
         
-
     }
     
 }

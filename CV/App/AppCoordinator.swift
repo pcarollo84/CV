@@ -30,6 +30,7 @@ class AppCoordinator: Coordinator {
         
         self.window = window
         self.tabBarController = UITabBarController()
+        self.tabBarController.tabBar.tintColor = UIColor.themeColour
         
         self.dataService = DataService(baseURL: Bundle.main.bundleURL)
         
