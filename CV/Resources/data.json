@@ -1,7 +1,7 @@
 {
     "areas": [
         {
-            "name": "me",
+            "name": "Profile",
             "sections": [
                 {
                     "name": "Personal Details",
@@ -24,7 +24,137 @@
                         {
                             "type": "job",
                             "title": "Company",
-                            "details": "PocketSizeMedia Limited"
+                            "details": "PocketSizeMedia Limited (Redditch B96 6SR)"
+                        },
+                        {
+                            "type": "description",
+                            "title": "period",
+                            "details": "Sep 2016 - Feb 2018"
+                        },
+                        {
+                            "type": "description",
+                            "title": "description",
+                            "details": "Worked on business apps for iOS with a small team of developers who embrace the fast moving mobile market and tech."
+                        }
+                    ]
+                },
+                {
+                    "name": "Mobile App Developer",
+                    "rows": [
+                        {
+                            "type": "job",
+                            "title": "Company",
+                            "details": "Pyronix (Rotherham, S66 8QY)"
+                        },
+                        {
+                            "type": "description",
+                            "title": "period",
+                            "details": "Jul 2016 - Aug 2016"
+                        },
+                        {
+                            "type": "description",
+                            "title": "description",
+                            "details": "In charge of developing a mobile app which would replace the current one as solution to connect security devices to phones."
+                        }
+                    ]
+                },
+                {
+                    "name": "iOS Developer",
+                    "rows": [
+                        {
+                            "type": "job",
+                            "title": "Company",
+                            "details": "365 Agile (Sutton Coldfield, B73 6AZ)"
+                        },
+                        {
+                            "type": "description",
+                            "title": "period",
+                            "details": "Aug 2015 - Jul 2016"
+                        },
+                        {
+                            "type": "description",
+                            "title": "description",
+                            "details": "Worked on business apps for iOS in a small team of developers in an Agile environment."
+                        }
+                    ]
+                },
+                {
+                    "name": "iOS Developer",
+                    "rows": [
+                        {
+                            "type": "job",
+                            "title": "Company",
+                            "details": "365 Agile (Sutton Coldfield, B73 6AZ)"
+                        },
+                        {
+                            "type": "description",
+                            "title": "period",
+                            "details": "Aug 2015 - Jul 2016"
+                        },
+                        {
+                            "type": "description",
+                            "title": "description",
+                            "details": "Worked on business apps for iOS in a small team of developers in an Agile environment."
+                        }
+                    ]
+                },
+                {
+                    "name": "iOS Developer",
+                    "rows": [
+                        {
+                            "type": "job",
+                            "title": "Company",
+                            "details": "Bilue (Sydney, Australia)"
+                        },
+                        {
+                            "type": "description",
+                            "title": "period",
+                            "details": "Dec 2014 - Feb 2015"
+                        },
+                        {
+                            "type": "description",
+                            "title": "description",
+                            "details": "Worked as a contractor on behalf of Bilue in refactoring an app for one of the biggest gambling company in Australia (Tab Corp). Reduced drastically the rate of crashes and increase the level of maintainability of the source code."
+                        }
+                    ]
+                },
+                {
+                    "name": "iOS Developer",
+                    "rows": [
+                        {
+                            "type": "job",
+                            "title": "Company",
+                            "details": "Omnys (Vicenza, Italy)"
+                        },
+                        {
+                            "type": "description",
+                            "title": "period",
+                            "details": "Mar 2011 - Sep 2014"
+                        },
+                        {
+                            "type": "description",
+                            "title": "description",
+                            "details": "My first experience as iOS Developer. Worked on several business apps, from audio/movie editing to app that connect to a professional laser machine using Bluetooth."
+                        }
+                    ]
+                },
+                {
+                    "name": "Software Developer",
+                    "rows": [
+                        {
+                            "type": "job",
+                            "title": "Company",
+                            "details": "Cesaco (Vicenza, Italy) "
+                        },
+                        {
+                            "type": "description",
+                            "title": "period",
+                            "details": "Dec 2007 - Jan 2011"
+                        },
+                        {
+                            "type": "description",
+                            "title": "description",
+                            "details": "My first professional experience as developer. Worked on implementing customisations for an ERP using Microsoft technologies (vb6 and .NET). Worked as well on a CRM solution using Java SE. "
                         }
                     ]
                 }

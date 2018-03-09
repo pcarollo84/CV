@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5222B7BE2050972F000D4EBB /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222B7BC2050972F000D4EBB /* AreaViewController.swift */; };
+		5222B7BF2050972F000D4EBB /* AreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5222B7BD2050972F000D4EBB /* AreaViewController.xib */; };
+		5222B7C2205097A0000D4EBB /* AreaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222B7C1205097A0000D4EBB /* AreaDataSource.swift */; };
+		5222B7C52050992E000D4EBB /* RowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222B7C42050992E000D4EBB /* RowTableViewCell.swift */; };
+		523A5E2C20527DA000F36A23 /* RowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E2B20527DA000F36A23 /* RowTableViewCell.xib */; };
 		52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8E4B2050057F006F3E0C /* Deserializer.swift */; };
 		52E9C7952050386E0061CA0B /* DeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9C7942050386E0061CA0B /* DeserializerTests.swift */; };
 		52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD8E204BE8340093989C /* AppDelegate.swift */; };
@@ -39,6 +44,11 @@
 
 /* Begin PBXFileReference section */
 		0139AA408EB6234EF406B86C /* Pods_CV.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5222B7BC2050972F000D4EBB /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
+		5222B7BD2050972F000D4EBB /* AreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaViewController.xib; sourceTree = "<group>"; };
+		5222B7C1205097A0000D4EBB /* AreaDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDataSource.swift; sourceTree = "<group>"; };
+		5222B7C42050992E000D4EBB /* RowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTableViewCell.swift; sourceTree = "<group>"; };
+		523A5E2B20527DA000F36A23 /* RowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RowTableViewCell.xib; sourceTree = "<group>"; };
 		52CA8E4B2050057F006F3E0C /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
 		52E9C7942050386E0061CA0B /* DeserializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializerTests.swift; sourceTree = "<group>"; };
 		52F6DD8B204BE8340093989C /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +100,34 @@
 				0139AA408EB6234EF406B86C /* Pods_CV.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5222B7BB205096FB000D4EBB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5222B7C320509910000D4EBB /* Cells */,
+				5222B7C02050977A000D4EBB /* Datasources */,
+				5222B7BC2050972F000D4EBB /* AreaViewController.swift */,
+				5222B7BD2050972F000D4EBB /* AreaViewController.xib */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5222B7C02050977A000D4EBB /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				5222B7C1205097A0000D4EBB /* AreaDataSource.swift */,
+			);
+			path = Datasources;
+			sourceTree = "<group>";
+		};
+		5222B7C320509910000D4EBB /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5222B7C42050992E000D4EBB /* RowTableViewCell.swift */,
+				523A5E2B20527DA000F36A23 /* RowTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		52CA8E46205004B3006F3E0C /* Deserializers */ = {
@@ -162,6 +200,7 @@
 				52F6DDB7204BF1130093989C /* Coordinators */,
 				52F6DDB4204BEC660093989C /* App */,
 				52F6DDB1204BEA9A0093989C /* Protocols */,
+				5222B7BB205096FB000D4EBB /* ViewControllers */,
 				52F6DD8E204BE8340093989C /* AppDelegate.swift */,
 				52F6DD97204BE8340093989C /* Assets.xcassets */,
 				52F6DD99204BE8340093989C /* LaunchScreen.storyboard */,
@@ -333,6 +372,8 @@
 				52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */,
 				52F6DDD4204C13E50093989C /* data.json in Resources */,
 				52F6DD98204BE8340093989C /* Assets.xcassets in Resources */,
+				5222B7BF2050972F000D4EBB /* AreaViewController.xib in Resources */,
+				523A5E2C20527DA000F36A23 /* RowTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,11 +446,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5222B7C52050992E000D4EBB /* RowTableViewCell.swift in Sources */,
 				52F6DDBF204C00780093989C /* Section.swift in Sources */,
 				52F6DDB3204BEAB20093989C /* Coordinator.swift in Sources */,
 				52F6DDC3204C01370093989C /* Root.swift in Sources */,
 				52F6DDBD204BFE060093989C /* Row.swift in Sources */,
 				52F6DDB6204BEC780093989C /* AppCoordinator.swift in Sources */,
+				5222B7BE2050972F000D4EBB /* AreaViewController.swift in Sources */,
+				5222B7C2205097A0000D4EBB /* AreaDataSource.swift in Sources */,
 				52F6DDC1204C00FC0093989C /* Area.swift in Sources */,
 				52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */,
 				52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */,

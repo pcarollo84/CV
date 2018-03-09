@@ -10,13 +10,16 @@ import Foundation
 import UIKit
 import CocoaLumberjack
 
-struct AppCoordinator: Coordinator {
+class AppCoordinator: Coordinator {
     
     private(set) var window: UIWindow?
     private(set) var tabBarController: UITabBarController
     
     private var dataService: DataService
     
+    private var viewControllers: [UIViewController] = []
+    private var datasources: [UITableViewDataSource] = []
+
     init(in window: UIWindow?) {
         
         self.window = window
@@ -39,10 +42,14 @@ struct AppCoordinator: Coordinator {
         //  TODO: Add a UIActivityIndicator
         
         dataService.areas(with: "data.json") { (areas, error) in
+
+            let vcsAndDs = self.viewControllersAndDataSources(areas: areas)
+            self.viewControllers = vcsAndDs.viewControllers
+            self.datasources = vcsAndDs.datasources
             
             DispatchQueue.main.async {
 
-                self.setup(tabBarController: self.tabBarController, areas: areas)
+                self.tabBarController.setViewControllers(self.viewControllers, animated: false)
 
             }
             
@@ -50,20 +57,22 @@ struct AppCoordinator: Coordinator {
         
     }
     
-    func setup(tabBarController: UITabBarController, areas: [Area]) {
-
-        var viewControllers: [UIViewController] = []
+    func viewControllersAndDataSources(areas: [Area]) -> (viewControllers: [UIViewController], datasources: [UITableViewDataSource]) {
+        
+        var vcs: [UIViewController] = []
+        var ds: [UITableViewDataSource] = []
         
         for area in areas {
             
-            let viewController = UIViewController()
+            let datasource = AreaDatasource(with: area)
+            let viewController = AreaViewController(datasource: datasource)
             viewController.title = area.name
             
-            viewControllers.append(viewController)
+            vcs.append(viewController)
+            ds.append(datasource)
         }
         
-        tabBarController.setViewControllers(viewControllers, animated: false)
-        
+        return (vcs, ds)
     }
     
 }
