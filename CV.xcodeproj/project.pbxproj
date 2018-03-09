@@ -12,6 +12,9 @@
 		5222B7C2205097A0000D4EBB /* AreaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222B7C1205097A0000D4EBB /* AreaDataSource.swift */; };
 		5222B7C52050992E000D4EBB /* RowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222B7C42050992E000D4EBB /* RowTableViewCell.swift */; };
 		523A5E2C20527DA000F36A23 /* RowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E2B20527DA000F36A23 /* RowTableViewCell.xib */; };
+		523A5E2F205287D800F36A23 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A5E2D205287D800F36A23 /* ImageTableViewCell.swift */; };
+		523A5E30205287D800F36A23 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E2E205287D800F36A23 /* ImageTableViewCell.xib */; };
+		523A5E3420528CE900F36A23 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E3320528CE900F36A23 /* profile.png */; };
 		52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8E4B2050057F006F3E0C /* Deserializer.swift */; };
 		52E9C7952050386E0061CA0B /* DeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9C7942050386E0061CA0B /* DeserializerTests.swift */; };
 		52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD8E204BE8340093989C /* AppDelegate.swift */; };
@@ -49,6 +52,9 @@
 		5222B7C1205097A0000D4EBB /* AreaDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDataSource.swift; sourceTree = "<group>"; };
 		5222B7C42050992E000D4EBB /* RowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTableViewCell.swift; sourceTree = "<group>"; };
 		523A5E2B20527DA000F36A23 /* RowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RowTableViewCell.xib; sourceTree = "<group>"; };
+		523A5E2D205287D800F36A23 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		523A5E2E205287D800F36A23 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		523A5E3320528CE900F36A23 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		52CA8E4B2050057F006F3E0C /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
 		52E9C7942050386E0061CA0B /* DeserializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializerTests.swift; sourceTree = "<group>"; };
 		52F6DD8B204BE8340093989C /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +132,8 @@
 			children = (
 				5222B7C42050992E000D4EBB /* RowTableViewCell.swift */,
 				523A5E2B20527DA000F36A23 /* RowTableViewCell.xib */,
+				523A5E2D205287D800F36A23 /* ImageTableViewCell.swift */,
+				523A5E2E205287D800F36A23 /* ImageTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				52F6DDD3204C13E50093989C /* data.json */,
+				523A5E3320528CE900F36A23 /* profile.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -371,7 +380,9 @@
 			files = (
 				52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */,
 				52F6DDD4204C13E50093989C /* data.json in Resources */,
+				523A5E3420528CE900F36A23 /* profile.png in Resources */,
 				52F6DD98204BE8340093989C /* Assets.xcassets in Resources */,
+				523A5E30205287D800F36A23 /* ImageTableViewCell.xib in Resources */,
 				5222B7BF2050972F000D4EBB /* AreaViewController.xib in Resources */,
 				523A5E2C20527DA000F36A23 /* RowTableViewCell.xib in Resources */,
 			);
@@ -454,6 +465,7 @@
 				52F6DDB6204BEC780093989C /* AppCoordinator.swift in Sources */,
 				5222B7BE2050972F000D4EBB /* AreaViewController.swift in Sources */,
 				5222B7C2205097A0000D4EBB /* AreaDataSource.swift in Sources */,
+				523A5E2F205287D800F36A23 /* ImageTableViewCell.swift in Sources */,
 				52F6DDC1204C00FC0093989C /* Area.swift in Sources */,
 				52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */,
 				52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */,

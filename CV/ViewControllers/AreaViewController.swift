@@ -27,14 +27,16 @@ class AreaViewController: UIViewController {
         super.viewDidLoad()
 
         //  Register cells
-        tableView.register(UINib(nibName: "RowTableViewCell", bundle: Bundle(for: RowTableViewCell.classForCoder())), forCellReuseIdentifier: RowTableViewCell.ReuseIdentifier)
-        tableView.dataSource = datasource
+        guard let areaDataSource = datasource as? AreaDatasource else {
+            return
+        }
+        areaDataSource.registerCells(for: tableView)
+        tableView.dataSource = areaDataSource
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {

@@ -71,4 +71,24 @@ struct DataService: DataServiceProtocol {
         
     }
     
+    func image(with name: String, sessionConfiguration: URLSessionConfiguration = URLSessionConfiguration.default, completion: @escaping (UIImage?) -> ()) {
+        
+        let request = URLRequest(url: baseURL.appendingPathComponent(name))
+        let session = URLSession(configuration: sessionConfiguration)
+        
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            
+            guard let data = data else {
+                completion(nil)
+                return
+            }
+            
+            completion(UIImage(data: data))
+            
+        }
+        
+        dataTask.resume()
+        
+    }
+    
 }

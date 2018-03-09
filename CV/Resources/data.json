@@ -8,7 +8,7 @@
                     "rows": [
                         {
                             "type": "image",
-                            "title": "",
+                            "title": "Paolo Carollo",
                             "details": "profile.png"
                         }
                     ]
@@ -22,7 +22,7 @@
                     "name": "iOS Developer",
                     "rows": [
                         {
-                            "type": "job",
+                            "type": "description",
                             "title": "Company",
                             "details": "PocketSizeMedia Limited (Redditch B96 6SR)"
                         },
@@ -42,7 +42,7 @@
                     "name": "Mobile App Developer",
                     "rows": [
                         {
-                            "type": "job",
+                            "type": "description",
                             "title": "Company",
                             "details": "Pyronix (Rotherham, S66 8QY)"
                         },
@@ -62,7 +62,7 @@
                     "name": "iOS Developer",
                     "rows": [
                         {
-                            "type": "job",
+                            "type": "description",
                             "title": "Company",
                             "details": "365 Agile (Sutton Coldfield, B73 6AZ)"
                         },
@@ -82,7 +82,7 @@
                     "name": "iOS Developer",
                     "rows": [
                         {
-                            "type": "job",
+                            "type": "description",
                             "title": "Company",
                             "details": "365 Agile (Sutton Coldfield, B73 6AZ)"
                         },
@@ -102,7 +102,7 @@
                     "name": "iOS Developer",
                     "rows": [
                         {
-                            "type": "job",
+                            "type": "description",
                             "title": "Company",
                             "details": "Bilue (Sydney, Australia)"
                         },
@@ -122,7 +122,7 @@
                     "name": "iOS Developer",
                     "rows": [
                         {
-                            "type": "job",
+                            "type": "description",
                             "title": "Company",
                             "details": "Omnys (Vicenza, Italy)"
                         },
@@ -142,7 +142,7 @@
                     "name": "Software Developer",
                     "rows": [
                         {
-                            "type": "job",
+                            "type": "description",
                             "title": "Company",
                             "details": "Cesaco (Vicenza, Italy) "
                         },

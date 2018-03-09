@@ -11,7 +11,6 @@ import Foundation
 enum RowType: String, Codable {
     case description = "description"
     case image = "image"
-    case job = "job"
 }
 
 protocol RowProtocol {
