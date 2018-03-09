@@ -22,6 +22,9 @@
 		52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8E4B2050057F006F3E0C /* Deserializer.swift */; };
 		52CA92482052ED7200A46063 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA92472052ED7200A46063 /* ColorExtensions.swift */; };
 		52E9C7952050386E0061CA0B /* DeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9C7942050386E0061CA0B /* DeserializerTests.swift */; };
+		52EE27D72053039B000DC290 /* TabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE27D62053039B000DC290 /* TabCoordinator.swift */; };
+		52EE27DA20530659000DC290 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52EE27D820530659000DC290 /* StartViewController.swift */; };
+		52EE27DB20530659000DC290 /* StartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52EE27D920530659000DC290 /* StartViewController.xib */; };
 		52F6DD8F204BE8340093989C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DD8E204BE8340093989C /* AppDelegate.swift */; };
 		52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52F6DD99204BE8340093989C /* LaunchScreen.storyboard */; };
 		52F6DDB3204BEAB20093989C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6DDB2204BEAB20093989C /* Coordinator.swift */; };
@@ -66,6 +69,9 @@
 		52CA8E4B2050057F006F3E0C /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
 		52CA92472052ED7200A46063 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		52E9C7942050386E0061CA0B /* DeserializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializerTests.swift; sourceTree = "<group>"; };
+		52EE27D62053039B000DC290 /* TabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabCoordinator.swift; sourceTree = "<group>"; };
+		52EE27D820530659000DC290 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		52EE27D920530659000DC290 /* StartViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StartViewController.xib; sourceTree = "<group>"; };
 		52F6DD8B204BE8340093989C /* CV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52F6DD8E204BE8340093989C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52F6DD9A204BE8340093989C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -123,6 +129,8 @@
 				5222B7C02050977A000D4EBB /* Datasources */,
 				5222B7BC2050972F000D4EBB /* AreaViewController.swift */,
 				5222B7BD2050972F000D4EBB /* AreaViewController.xib */,
+				52EE27D820530659000DC290 /* StartViewController.swift */,
+				52EE27D920530659000DC290 /* StartViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -269,6 +277,7 @@
 			isa = PBXGroup;
 			children = (
 				523A5E352052914800F36A23 /* AreaCoordinator.swift */,
+				52EE27D62053039B000DC290 /* TabCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -400,6 +409,7 @@
 			files = (
 				52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */,
 				52F6DDD4204C13E50093989C /* data.json in Resources */,
+				52EE27DB20530659000DC290 /* StartViewController.xib in Resources */,
 				523A5E3420528CE900F36A23 /* profile.png in Resources */,
 				523A5E30205287D800F36A23 /* ImageTableViewCell.xib in Resources */,
 				523A5E3D2052A05200F36A23 /* Assets.xcassets in Resources */,
@@ -482,6 +492,8 @@
 				52F6DDBF204C00780093989C /* Section.swift in Sources */,
 				52F6DDB3204BEAB20093989C /* Coordinator.swift in Sources */,
 				52F6DDC3204C01370093989C /* Root.swift in Sources */,
+				52EE27D72053039B000DC290 /* TabCoordinator.swift in Sources */,
+				52EE27DA20530659000DC290 /* StartViewController.swift in Sources */,
 				52F6DDBD204BFE060093989C /* Row.swift in Sources */,
 				523A5E402052A88A00F36A23 /* LinkTableViewCell.swift in Sources */,
 				523A5E362052914800F36A23 /* AreaCoordinator.swift in Sources */,

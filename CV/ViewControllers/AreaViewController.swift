@@ -13,10 +13,10 @@ class AreaViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    weak var datasource: UITableViewDataSource?
+    var areaDatasource: AreaDatasource
     
-    init(datasource: UITableViewDataSource) {
-        self.datasource = datasource
+    init(areaDatasource: AreaDatasource) {
+        self.areaDatasource = areaDatasource
         super.init(nibName: "AreaViewController", bundle: Bundle(for: AreaViewController.classForCoder()))
     }
     
@@ -28,11 +28,8 @@ class AreaViewController: UIViewController {
         super.viewDidLoad()
 
         //  Register cells
-        guard let areaDataSource = datasource as? AreaDatasource else {
-            return
-        }
-        areaDataSource.registerCells(for: tableView)
-        tableView.dataSource = areaDataSource
+        areaDatasource.registerCells(for: tableView)
+        tableView.dataSource = areaDatasource
         tableView.delegate = self
     }
     

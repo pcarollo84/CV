@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-struct AreaCoordinator: Coordinator {
+class AreaCoordinator: Coordinator {
     
     private(set) var area: Area
     var topViewController: UIViewController {
@@ -29,7 +29,7 @@ struct AreaCoordinator: Coordinator {
         self.navigationController.title = area.name.capitalized
         self.navigationController.tabBarItem.image = UIImage(named: area.name.lowercased())
 
-        let viewController = AreaViewController(datasource: areaDatasource)
+        let viewController = AreaViewController(areaDatasource: areaDatasource)
         viewController.title = area.name.capitalized
         self.rootViewController = viewController
         
