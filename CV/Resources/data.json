@@ -10,6 +10,35 @@
                             "type": "image",
                             "title": "Paolo Carollo",
                             "details": "profile.png"
+                        },
+                        {
+                            "type": "description",
+                            "title": "Born",
+                            "details": "Vicenza, 30/04/1984"
+                        },
+                        {
+                            "type": "description",
+                            "title": "Info",
+                            "details": "I lived in Vicenza for most of my life. In October 2014 I moved to Australia. After travelling around Australia and New Zealand, in July 2015 I decided to move back to Europe. I came to the UK, first in Wolverhampton, now in Birmingham. In this way I could join my then"
+                        }
+                    ]
+                }, {
+                    "name": "Contacts",
+                    "rows": [
+                        {
+                            "type": "description",
+                            "title": "email",
+                            "details": "pcarollo84@gmail.com"
+                        },
+                        {
+                            "type": "description",
+                            "title": "phone",
+                            "details": "+44 7835065235"
+                        },
+                        {
+                            "type": "description",
+                            "title": "Linkedin",
+                            "details": "linkedin.com/in/paolo-carollo-27a66020/"
                         }
                     ]
                 }
