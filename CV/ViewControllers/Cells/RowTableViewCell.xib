@@ -37,7 +37,7 @@
                 <constraints>
                     <constraint firstAttribute="trailingMargin" secondItem="hMp-lf-5aV" secondAttribute="trailing" id="DBP-oh-zsT"/>
                     <constraint firstItem="hMp-lf-5aV" firstAttribute="top" secondItem="smR-mG-Rv0" secondAttribute="bottom" constant="5" id="H4e-3l-Sc2"/>
-                    <constraint firstAttribute="bottom" secondItem="hMp-lf-5aV" secondAttribute="bottom" constant="12.5" id="Q5m-Dx-mum"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="hMp-lf-5aV" secondAttribute="bottom" constant="2" id="Q5m-Dx-mum"/>
                     <constraint firstItem="hMp-lf-5aV" firstAttribute="leading" secondItem="smR-mG-Rv0" secondAttribute="leading" id="VKE-Pj-lst"/>
                     <constraint firstItem="smR-mG-Rv0" firstAttribute="top" secondItem="Ont-Nd-UXU" secondAttribute="topMargin" id="Wrb-3F-iMm"/>
                     <constraint firstItem="smR-mG-Rv0" firstAttribute="leading" secondItem="Ont-Nd-UXU" secondAttribute="leadingMargin" id="wit-p4-H5C"/>

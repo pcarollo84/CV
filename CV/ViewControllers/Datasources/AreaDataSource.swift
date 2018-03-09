@@ -40,8 +40,8 @@ class AreaDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
             return dequeRowTableViewCell(for: tableView, with: row, at: indexPath)
         case .image:
             return dequeImageTableViewCell(for: tableView, with: row, at: indexPath)
-        default:
-            return dequeRowTableViewCell(for: tableView, with: row, at: indexPath)
+        case .email, .phone, .link:
+            return dequeLinkTableViewCell(for: tableView, with: row, at: indexPath)
         }
         
     }
@@ -52,7 +52,7 @@ class AreaDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
         
         tableView.register(UINib(nibName: "RowTableViewCell", bundle: Bundle(for: RowTableViewCell.classForCoder())), forCellReuseIdentifier: RowTableViewCell.ReuseIdentifier)
         tableView.register(UINib(nibName: "ImageTableViewCell", bundle: Bundle(for: ImageTableViewCell.classForCoder())), forCellReuseIdentifier: ImageTableViewCell.ReuseIdentifier)
-        
+        tableView.register(UINib(nibName: "LinkTableViewCell", bundle: Bundle(for: LinkTableViewCell.classForCoder())), forCellReuseIdentifier: LinkTableViewCell.ReuseIdentifier)
     }
     
     //  MARK: - Helpers
@@ -96,23 +96,17 @@ class AreaDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
         
     }
     
-    //  Delegate - TODO: to move
-    
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+    private func dequeLinkTableViewCell(for tableView: UITableView, with row: Row, at indexPath: IndexPath) -> UITableViewCell {
         
-        let row = area.sections[indexPath.section].rows[indexPath.row]
-        switch row.type {
-        case .image:
-            return 100.0
-        default:
-            return 65.0
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: LinkTableViewCell.ReuseIdentifier) as? LinkTableViewCell else {
+            return UITableViewCell()
         }
-    }
-
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        return UITableViewAutomaticDimension
-
+        cell.titleLabel.text = row.title
+        cell.detailLabel.text = row.details
+        cell.iconImageView.contentMode = .scaleAspectFit
+        cell.iconImageView.image = UIImage(named: row.type.rawValue)
+        return cell
     }
     
 }

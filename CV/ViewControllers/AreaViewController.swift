@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MessageUI
 
 class AreaViewController: UIViewController {
 
@@ -32,6 +33,7 @@ class AreaViewController: UIViewController {
         }
         areaDataSource.registerCells(for: tableView)
         tableView.dataSource = areaDataSource
+        tableView.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -55,4 +57,110 @@ class AreaViewController: UIViewController {
     }
     */
 
+}
+
+extension AreaViewController: UITableViewDelegate, MFMailComposeViewControllerDelegate {
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        guard let datasource = tableView.dataSource as? AreaDatasource else {
+            return 0
+        }
+        
+        let row = datasource.area.sections[indexPath.section].rows[indexPath.row]
+        switch row.type {
+        case .image:
+            return 100.0
+        default:
+            return 65.0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        return UITableViewAutomaticDimension
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard let datasource = tableView.dataSource as? AreaDatasource else {
+            return
+        }
+        
+        let row = datasource.area.sections[indexPath.section].rows[indexPath.row]
+        switch row.type {
+        case .email:
+            handleMailTo(with: row.details)
+        case .phone:
+            handlePhone(with: row.details)
+        case .link:
+            handleLink(with: row.details)
+        default:
+            break
+        }
+        
+    }
+    
+    //  MARK: - LINK
+    
+    private func handleLink(with string: String) {
+        
+        let urlString = normalizeHttpsURLString(string: string)
+        guard let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) else {
+            return
+        }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        
+    }
+    
+    private func normalizeHttpsURLString(string: String) -> String {
+        
+        if string.hasPrefix("https") {
+            return string
+        }
+        
+        return "https://\(string)"
+        
+    }
+    
+    //  MARK: - TEL
+    
+    private func handlePhone(with string: String) {
+        
+        let urlString = "tel://\(string)"
+        guard let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) else {
+            return
+        }
+        
+        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        
+    }
+    
+    //  MARK: - EMAIL
+    
+    private func handleMailTo(with string: String) {
+        
+        guard MFMailComposeViewController.canSendMail() else {
+            print("Mail services are not available")
+            return
+        }
+        
+        let composeVC = MFMailComposeViewController()
+        composeVC.mailComposeDelegate = self
+        
+        // Configure the fields of the interface.
+        composeVC.setToRecipients([string])
+        composeVC.setSubject("Hello!")
+        composeVC.setMessageBody("Hello from California!", isHTML: false)
+        
+        // Present the view controller modally.
+        self.present(composeVC, animated: true, completion: nil)
+
+        
+    }
+    
 }
