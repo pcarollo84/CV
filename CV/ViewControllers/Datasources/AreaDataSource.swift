@@ -61,6 +61,7 @@ class AreaDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         
+        cell.selectionStyle = .none
         cell.titleLabel.text = row.title.capitalized
         cell.detailLabel.text = row.details
         
@@ -74,6 +75,7 @@ class AreaDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
             return UITableViewCell()
         }
         
+        cell.selectionStyle = .none
         cell.titleLabel.text = row.title.capitalized
         self.dataService.image(with: row.details) { (image) in
             guard let image = image else {
