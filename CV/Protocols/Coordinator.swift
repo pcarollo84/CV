@@ -7,8 +7,11 @@
 //
 
 import Foundation
+import UIKit
 
 protocol Coordinator {
+    
+    var topViewController: UIViewController { get }
     
     func start()
     

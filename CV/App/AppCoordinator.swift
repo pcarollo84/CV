@@ -15,10 +15,16 @@ class AppCoordinator: Coordinator {
     private(set) var window: UIWindow?
     private(set) var tabBarController: UITabBarController
     
-    private var dataService: DataService
+    var topViewController: UIViewController {
+        return self.tabBarController
+    }
     
-    private var viewControllers: [UIViewController] = []
-    private var datasources: [UITableViewDataSource] = []
+    private var dataService: DataService
+    private var areaCoordinators: [Coordinator] = []
+    private var viewControllers: [UIViewController] {
+        return areaCoordinators.flatMap({return $0.topViewController})
+    }
+    private var areas: [Area] = []
 
     init(in window: UIWindow?) {
         
@@ -42,10 +48,9 @@ class AppCoordinator: Coordinator {
         //  TODO: Add a UIActivityIndicator
         
         dataService.areas(with: "data.json") { (areas, error) in
-
-            let vcsAndDs = self.viewControllersAndDataSources(areas: areas)
-            self.viewControllers = vcsAndDs.viewControllers
-            self.datasources = vcsAndDs.datasources
+            
+            self.areas = areas
+            self.areaCoordinators = self.coordinators(for: areas)
             
             DispatchQueue.main.async {
 
@@ -57,22 +62,21 @@ class AppCoordinator: Coordinator {
         
     }
     
-    func viewControllersAndDataSources(areas: [Area]) -> (viewControllers: [UIViewController], datasources: [UITableViewDataSource]) {
+
+    func coordinators(for areas: [Area]) -> [Coordinator] {
         
-        var vcs: [UIViewController] = []
-        var ds: [UITableViewDataSource] = []
+        var coordinatorsArray: [Coordinator] = []
         
         for area in areas {
             
-            let datasource = AreaDatasource(with: area)
-            let viewController = AreaViewController(datasource: datasource)
-            viewController.title = area.name
+            let coordinator = AreaCoordinator(area: area)
+            coordinator.start()
+            coordinatorsArray.append(coordinator)
             
-            vcs.append(viewController)
-            ds.append(datasource)
         }
         
-        return (vcs, ds)
+        return coordinatorsArray
     }
     
 }
+
