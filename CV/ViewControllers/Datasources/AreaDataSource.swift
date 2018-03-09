@@ -42,6 +42,8 @@ class AreaDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
             return dequeImageTableViewCell(for: tableView, with: row, at: indexPath)
         case .email, .phone, .link:
             return dequeLinkTableViewCell(for: tableView, with: row, at: indexPath)
+        case .variable:
+            return dequeRowTableViewCellWithSubstitution(for: tableView, with: row, at: indexPath)
         }
         
     }
@@ -109,4 +111,17 @@ class AreaDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
         return cell
     }
     
+    private func dequeRowTableViewCellWithSubstitution(for tableView: UITableView, with row: Row, at indexPath: IndexPath) -> UITableViewCell {
+        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: RowTableViewCell.ReuseIdentifier) as? RowTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        cell.selectionStyle = .none
+        cell.titleLabel.text = row.title.capitalized
+        cell.detailLabel.text = Bundle.main.infoDictionary?[row.details] as? String ?? ""
+        
+        return cell
+        
+    }
 }

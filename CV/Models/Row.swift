@@ -14,6 +14,7 @@ enum RowType: String, Codable {
     case phone
     case email
     case link
+    case variable
 }
 
 protocol RowProtocol {

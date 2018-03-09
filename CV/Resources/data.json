@@ -196,10 +196,15 @@
                     "name": "Info",
                     "rows": [
                         {
-                            "type": "description",
+                            "type": "variable",
                             "title": "app version",
-                            "details": "$(app_version)"
-                        }
+                            "details": "CFBundleShortVersionString"
+                        },
+                        {
+                            "type": "variable",
+                            "title": "Build",
+                            "details": "CFBundleVersion"
+                        }                    
                     ]
                 }
             ]
