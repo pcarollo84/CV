@@ -40,6 +40,8 @@ class AreaDatasource: NSObject, UITableViewDataSource, UITableViewDelegate {
             return dequeRowTableViewCell(for: tableView, with: row, at: indexPath)
         case .image:
             return dequeImageTableViewCell(for: tableView, with: row, at: indexPath)
+        default:
+            return dequeRowTableViewCell(for: tableView, with: row, at: indexPath)
         }
         
     }

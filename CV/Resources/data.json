@@ -26,17 +26,17 @@
                     "name": "Contacts",
                     "rows": [
                         {
-                            "type": "description",
+                            "type": "email",
                             "title": "email",
                             "details": "pcarollo84@gmail.com"
                         },
                         {
-                            "type": "description",
+                            "type": "phone",
                             "title": "phone",
                             "details": "+44 7835065235"
                         },
                         {
-                            "type": "description",
+                            "type": "link",
                             "title": "Linkedin",
                             "details": "linkedin.com/in/paolo-carollo-27a66020/"
                         }

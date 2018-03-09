@@ -9,8 +9,11 @@
 import Foundation
 
 enum RowType: String, Codable {
-    case description = "description"
-    case image = "image"
+    case description
+    case image
+    case phone
+    case email
+    case link
 }
 
 protocol RowProtocol {
