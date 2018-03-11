@@ -128,7 +128,7 @@ extension AreaViewController: UITableViewDelegate, MFMailComposeViewControllerDe
     
     private func handlePhone(with string: String) {
         
-        let urlString = "tel://\(string)"
+        let urlString = "tel://\(string)".replacingOccurrences(of: " ", with: "")
         guard let url = URL(string: urlString), UIApplication.shared.canOpenURL(url) else {
             return
         }
