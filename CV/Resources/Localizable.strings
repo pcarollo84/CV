@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  CV
+
+  Created by Paolo Carollo on 11/03/2018.
+  Copyright © 2018 Paolo Carollo. All rights reserved.
+*/
+
+
+"StartViewController.welcome.text" = "Welcome!\nThis app will show you some of the abilities I've learnt as iOS Developer through all these years.\nPlease enjoy.";
+"StartViewController.correct.button.text" = "Show me the Profile";
+"StartViewController.wrong.button.text" = "Surprise me!";
+

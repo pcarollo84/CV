@@ -23,7 +23,7 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dT9-gE-4K7">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="dT9-gE-4K7">
                     <rect key="frame" x="152" y="50" width="71" height="20.5"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
@@ -63,8 +63,11 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dT9-gE-4K7" secondAttribute="trailing" constant="10" id="BFs-Xu-JL1"/>
                 <constraint firstItem="R8j-QR-OKX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JBA-00-Xd5"/>
+                <constraint firstItem="wHF-8e-6UU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dT9-gE-4K7" secondAttribute="bottom" constant="10" id="PlW-tG-91d"/>
                 <constraint firstItem="dT9-gE-4K7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="YZJ-gm-jbd"/>
+                <constraint firstItem="dT9-gE-4K7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="hQM-Ze-aYt"/>
                 <constraint firstItem="R8j-QR-OKX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="n44-KW-Jqw"/>
                 <constraint firstItem="dT9-gE-4K7" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="r2n-HB-Gro"/>
             </constraints>

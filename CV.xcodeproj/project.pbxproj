@@ -19,6 +19,8 @@
 		523A5E3D2052A05200F36A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E3C2052A05100F36A23 /* Assets.xcassets */; };
 		523A5E402052A88A00F36A23 /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A5E3E2052A88A00F36A23 /* LinkTableViewCell.swift */; };
 		523A5E412052A88A00F36A23 /* LinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E3F2052A88A00F36A23 /* LinkTableViewCell.xib */; };
+		52BB203720559D2C00921653 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52BB203620559D2C00921653 /* Localizable.strings */; };
+		52BB203920559DA700921653 /* wrong.json in Resources */ = {isa = PBXBuildFile; fileRef = 52BB203820559DA700921653 /* wrong.json */; };
 		52CA8E4C2050057F006F3E0C /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA8E4B2050057F006F3E0C /* Deserializer.swift */; };
 		52CA92482052ED7200A46063 /* ColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CA92472052ED7200A46063 /* ColorExtensions.swift */; };
 		52E9C7952050386E0061CA0B /* DeserializerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52E9C7942050386E0061CA0B /* DeserializerTests.swift */; };
@@ -68,6 +70,8 @@
 		523A5E3C2052A05100F36A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523A5E3E2052A88A00F36A23 /* LinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTableViewCell.swift; sourceTree = "<group>"; };
 		523A5E3F2052A88A00F36A23 /* LinkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkTableViewCell.xib; sourceTree = "<group>"; };
+		52BB203620559D2C00921653 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		52BB203820559DA700921653 /* wrong.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wrong.json; sourceTree = "<group>"; };
 		52CA8E4B2050057F006F3E0C /* Deserializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
 		52CA92472052ED7200A46063 /* ColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtensions.swift; sourceTree = "<group>"; };
 		52E9C7942050386E0061CA0B /* DeserializerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeserializerTests.swift; sourceTree = "<group>"; };
@@ -311,8 +315,10 @@
 		52F6DDD2204C139D0093989C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				52BB203820559DA700921653 /* wrong.json */,
 				52F6DDD3204C13E50093989C /* data.json */,
 				523A5E3320528CE900F36A23 /* profile.png */,
+				52BB203620559D2C00921653 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -414,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52F6DD9B204BE8340093989C /* LaunchScreen.storyboard in Resources */,
+				52BB203720559D2C00921653 /* Localizable.strings in Resources */,
 				52F6DDD4204C13E50093989C /* data.json in Resources */,
 				52EE27DF20531079000DC290 /* WrongViewController.xib in Resources */,
 				52EE27DB20530659000DC290 /* StartViewController.xib in Resources */,
@@ -423,6 +430,7 @@
 				5222B7BF2050972F000D4EBB /* AreaViewController.xib in Resources */,
 				523A5E2C20527DA000F36A23 /* RowTableViewCell.xib in Resources */,
 				523A5E412052A88A00F36A23 /* LinkTableViewCell.xib in Resources */,
+				52BB203920559DA700921653 /* wrong.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -663,6 +671,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4SCANVHRT;
 				INFOPLIST_FILE = CV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paolocarollo.CV;
@@ -678,6 +687,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P4SCANVHRT;
 				INFOPLIST_FILE = CV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paolocarollo.CV;

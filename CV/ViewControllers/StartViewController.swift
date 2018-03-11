@@ -28,6 +28,10 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        welcomeLabel.text = NSLocalizedString("StartViewController.welcome.text", comment: "")
+        correctButton.setTitle(NSLocalizedString("StartViewController.correct.button.text", comment: ""), for: .normal)
+        wrongButton.setTitle(NSLocalizedString("StartViewController.wrong.button.text", comment: ""), for: .normal)
+        
         correctButton.layer.cornerRadius = 6
         correctButton.backgroundColor = UIColor.themeColour
         correctButton.tintColor = UIColor.white
