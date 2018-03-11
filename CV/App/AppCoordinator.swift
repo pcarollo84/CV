@@ -31,6 +31,22 @@ class AppCoordinator: Coordinator {
         self.startViewController = StartViewController()
         self.navigationController = UINavigationController(rootViewController: startViewController)
 
+        self.setupNavigationController()
+        
+        //  Setup 3rd party Libs
+        //  CocoaLumberjack
+        DDLog.add(DDTTYLogger.sharedInstance) // Xcode console
+        
+    }
+    
+    func start() {
+
+        self.showNavigationViewController()
+        
+    }
+    
+    func setupNavigationController() {
+        
         //  Set handlers
         self.startViewController.correctButtonSelected = { [weak self] in
             
@@ -64,21 +80,20 @@ class AppCoordinator: Coordinator {
                 
             })
             
-            
-            
         }
-        
-        //  Setup 3rd party Libs
-        //  CocoaLumberjack
-        DDLog.add(DDTTYLogger.sharedInstance) // Xcode console
-        
     }
     
-    func start() {
-
+    func showNavigationViewController() {
         self.window?.rootViewController = navigationController
         self.window?.makeKeyAndVisible()
+    }
+    
+    func showStartViewController() {
+        if let _ = self.navigationController.popToRootViewController(animated: false) {
+            return
+        }
         
+        self.navigationController.dismiss(animated: false, completion: nil)
     }
 
     private func pushTabCoordinator(areas: [Area]) {
