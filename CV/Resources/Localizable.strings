@@ -8,6 +8,6 @@
 
 
 "StartViewController.welcome.text" = "Welcome!\nThis app will show you some of the abilities I've learnt as iOS Developer through all these years.\nPlease enjoy.";
-"StartViewController.correct.button.text" = "Show me the Profile";
+"StartViewController.correct.button.text" = "Show Profile";
 "StartViewController.wrong.button.text" = "Surprise me!";
 

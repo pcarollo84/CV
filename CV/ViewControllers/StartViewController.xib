@@ -29,21 +29,23 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R8j-QR-OKX">
-                    <rect key="frame" x="104.5" y="273.5" width="166" height="120"/>
+                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="R8j-QR-OKX">
+                    <rect key="frame" x="87.5" y="273.5" width="200" height="120"/>
                     <subviews>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHF-8e-6UU">
-                            <rect key="frame" x="0.0" y="0.0" width="166" height="50"/>
+                        <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wHF-8e-6UU">
+                            <rect key="frame" x="0.0" y="0.0" width="200" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="18b-C7-Yf0"/>
+                                <constraint firstAttribute="width" constant="200" id="dzO-so-Ere"/>
                             </constraints>
+                            <inset key="titleEdgeInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
                             <state key="normal" title="Load with Correct JSON"/>
                             <connections>
                                 <action selector="handleCorrectButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="3iV-NK-Bfy"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l3f-uF-Di8">
-                            <rect key="frame" x="0.0" y="70" width="166" height="50"/>
+                            <rect key="frame" x="0.0" y="70" width="200" height="50"/>
                             <state key="normal" title="Load with Wrong JSON"/>
                             <connections>
                                 <action selector="handleWrongButtonTouchUpInside:" destination="-1" eventType="touchUpInside" id="BxP-gl-VKm"/>
@@ -64,8 +66,10 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="dT9-gE-4K7" secondAttribute="trailing" constant="10" id="BFs-Xu-JL1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wHF-8e-6UU" secondAttribute="trailing" constant="10" id="BbV-bA-mJc"/>
                 <constraint firstItem="R8j-QR-OKX" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="JBA-00-Xd5"/>
                 <constraint firstItem="wHF-8e-6UU" firstAttribute="top" relation="greaterThanOrEqual" secondItem="dT9-gE-4K7" secondAttribute="bottom" constant="10" id="PlW-tG-91d"/>
+                <constraint firstItem="R8j-QR-OKX" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="URm-g2-EH5"/>
                 <constraint firstItem="dT9-gE-4K7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="YZJ-gm-jbd"/>
                 <constraint firstItem="dT9-gE-4K7" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="hQM-Ze-aYt"/>
                 <constraint firstItem="R8j-QR-OKX" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="n44-KW-Jqw"/>
