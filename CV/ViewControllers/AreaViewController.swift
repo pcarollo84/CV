@@ -151,13 +151,17 @@ extension AreaViewController: UITableViewDelegate, MFMailComposeViewControllerDe
         
         // Configure the fields of the interface.
         composeVC.setToRecipients([string])
-        composeVC.setSubject("Hello!")
-        composeVC.setMessageBody("Hello from California!", isHTML: false)
+        composeVC.setSubject("Moew from the other side")
+        composeVC.setMessageBody(NSLocalizedString("AreaViewController.mail.message.text", comment: ""), isHTML: false)
         
         // Present the view controller modally.
         self.present(composeVC, animated: true, completion: nil)
 
         
+    }
+    
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }
