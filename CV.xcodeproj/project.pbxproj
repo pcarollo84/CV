@@ -11,12 +11,12 @@
 		5222B7BF2050972F000D4EBB /* AreaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5222B7BD2050972F000D4EBB /* AreaViewController.xib */; };
 		5222B7C2205097A0000D4EBB /* AreaDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222B7C1205097A0000D4EBB /* AreaDataSource.swift */; };
 		5222B7C52050992E000D4EBB /* RowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5222B7C42050992E000D4EBB /* RowTableViewCell.swift */; };
+		52278D442056F3AD0037AA39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52278D432056F3AD0037AA39 /* Assets.xcassets */; };
 		523A5E2C20527DA000F36A23 /* RowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E2B20527DA000F36A23 /* RowTableViewCell.xib */; };
 		523A5E2F205287D800F36A23 /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A5E2D205287D800F36A23 /* ImageTableViewCell.swift */; };
 		523A5E30205287D800F36A23 /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E2E205287D800F36A23 /* ImageTableViewCell.xib */; };
 		523A5E3420528CE900F36A23 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E3320528CE900F36A23 /* profile.png */; };
 		523A5E362052914800F36A23 /* AreaCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A5E352052914800F36A23 /* AreaCoordinator.swift */; };
-		523A5E3D2052A05200F36A23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E3C2052A05100F36A23 /* Assets.xcassets */; };
 		523A5E402052A88A00F36A23 /* LinkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523A5E3E2052A88A00F36A23 /* LinkTableViewCell.swift */; };
 		523A5E412052A88A00F36A23 /* LinkTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 523A5E3F2052A88A00F36A23 /* LinkTableViewCell.xib */; };
 		52BB203720559D2C00921653 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 52BB203620559D2C00921653 /* Localizable.strings */; };
@@ -62,12 +62,12 @@
 		5222B7BD2050972F000D4EBB /* AreaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AreaViewController.xib; sourceTree = "<group>"; };
 		5222B7C1205097A0000D4EBB /* AreaDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaDataSource.swift; sourceTree = "<group>"; };
 		5222B7C42050992E000D4EBB /* RowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowTableViewCell.swift; sourceTree = "<group>"; };
+		52278D432056F3AD0037AA39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523A5E2B20527DA000F36A23 /* RowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RowTableViewCell.xib; sourceTree = "<group>"; };
 		523A5E2D205287D800F36A23 /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 		523A5E2E205287D800F36A23 /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
 		523A5E3320528CE900F36A23 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
 		523A5E352052914800F36A23 /* AreaCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaCoordinator.swift; sourceTree = "<group>"; };
-		523A5E3C2052A05100F36A23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		523A5E3E2052A88A00F36A23 /* LinkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkTableViewCell.swift; sourceTree = "<group>"; };
 		523A5E3F2052A88A00F36A23 /* LinkTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LinkTableViewCell.xib; sourceTree = "<group>"; };
 		52BB203620559D2C00921653 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -249,7 +249,7 @@
 				52F6DD8E204BE8340093989C /* AppDelegate.swift */,
 				52F6DD99204BE8340093989C /* LaunchScreen.storyboard */,
 				52F6DD9C204BE8340093989C /* Info.plist */,
-				523A5E3C2052A05100F36A23 /* Assets.xcassets */,
+				52278D432056F3AD0037AA39 /* Assets.xcassets */,
 			);
 			path = CV;
 			sourceTree = "<group>";
@@ -426,10 +426,10 @@
 				52EE27DB20530659000DC290 /* StartViewController.xib in Resources */,
 				523A5E3420528CE900F36A23 /* profile.png in Resources */,
 				523A5E30205287D800F36A23 /* ImageTableViewCell.xib in Resources */,
-				523A5E3D2052A05200F36A23 /* Assets.xcassets in Resources */,
 				5222B7BF2050972F000D4EBB /* AreaViewController.xib in Resources */,
 				523A5E2C20527DA000F36A23 /* RowTableViewCell.xib in Resources */,
 				523A5E412052A88A00F36A23 /* LinkTableViewCell.xib in Resources */,
+				52278D442056F3AD0037AA39 /* Assets.xcassets in Resources */,
 				52BB203920559DA700921653 /* wrong.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,12 +670,14 @@
 			baseConfigurationReference = D9288B96D44EADCE0D3A5B43 /* Pods-CV.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = P4SCANVHRT;
 				INFOPLIST_FILE = CV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paolocarollo.CV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -686,12 +688,15 @@
 			baseConfigurationReference = AAA7393267629F48CE8C03D6 /* Pods-CV.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = P4SCANVHRT;
 				INFOPLIST_FILE = CV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.paolocarollo.CV;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "cv dist";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
