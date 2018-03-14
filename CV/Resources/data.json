@@ -19,7 +19,7 @@
                         {
                             "type": "description",
                             "title": "Info",
-                            "details": "I lived in Vicenza for most of my life. In October 2014 I moved to Australia. After travelling around Australia and New Zealand, in July 2015 I decided to move back to Europe. I came to the UK, first in Wolverhampton, now in Birmingham. In this way I could join my then girlfriend. Now she’s my wife. What is love"
+                            "details": "I lived in Vicenza (Italy) for most of my life. In October 2014 I moved to Australia. After travelling around Australia and New Zealand, in July 2015 I decided to move back to Europe. I came to the UK, first in Wolverhampton, now in Birmingham. In this way I could join my then girlfriend. Now she’s my wife. What is love"
                         }
                     ]
                 },
@@ -39,7 +39,7 @@
                         {
                             "type": "link",
                             "title": "Linkedin",
-                            "details": "linkedin.com/in/paolo-carollo-27a66020/"
+                            "details": "linkedin.com/in/paolo-carollo/"
                         }
                     ]
                 }
@@ -54,7 +54,7 @@
                         {
                             "type": "description",
                             "title": "Company",
-                            "details": "PocketSizeMedia Limited (Redditch B96 6SR)"
+                            "details": "PocketSizeMedia Limited (Redditch, B96 6SR)"
                         },
                         {
                             "type": "description",
@@ -85,26 +85,6 @@
                             "type": "description",
                             "title": "description",
                             "details": "In charge of developing a mobile app which would replace the current one as solution to connect security devices to phones."
-                        }
-                    ]
-                },
-                {
-                    "name": "iOS Developer",
-                    "rows": [
-                        {
-                            "type": "description",
-                            "title": "Company",
-                            "details": "365 Agile (Sutton Coldfield, B73 6AZ)"
-                        },
-                        {
-                            "type": "description",
-                            "title": "period",
-                            "details": "Aug 2015 - Jul 2016"
-                        },
-                        {
-                            "type": "description",
-                            "title": "description",
-                            "details": "Worked on business apps for iOS in a small team of developers in an Agile environment."
                         }
                     ]
                 },
