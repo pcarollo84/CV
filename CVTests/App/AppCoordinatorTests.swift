@@ -30,19 +30,6 @@ class AppCoordinatorTests: XCTestCase {
         XCTAssertNotNil(appCoordinator)
         
     }
-    
-    func testStartAppCoordinator_SetTabBarControllerAsRootViewController() {
-        
-        let appCoordinator = AppCoordinator(in: window)
-        let tabBarController = appCoordinator.tabBarController
-        
-        XCTAssertNotNil(tabBarController)
-        XCTAssertNil(window.rootViewController)
-        
-        appCoordinator.start()
-        XCTAssertEqual(window.rootViewController, tabBarController)
-        
-    }
 
     
 }

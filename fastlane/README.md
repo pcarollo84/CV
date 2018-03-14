@@ -20,7 +20,12 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane ios beta
 ```
-Description of what the lane does
+This lane publish the app on TestFlight
+### ios tests
+```
+fastlane ios tests
+```
+
 
 ----
 

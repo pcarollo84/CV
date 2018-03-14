@@ -35,7 +35,7 @@ class TestJSON {
                         "name": "iOS Developer",
                         "rows": [
                             {
-                                "type": "job",
+                                "type": "description",
                                 "title": "company",
                                 "details": "TheFakeCompany Limited"
                             }

@@ -22,7 +22,7 @@
                     "name": "iOS Developer",
                     "rows": [
                         {
-                            "type": "job",
+                            "type": "description",
                             "title": "Company",
                             "details": "PocketSizeMedia Limited"
                         }
