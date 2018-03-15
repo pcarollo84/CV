@@ -26,6 +26,11 @@ This lane publish the app on TestFlight
 fastlane ios tests
 ```
 
+### ios screenshots
+```
+fastlane ios screenshots
+```
+
 
 ----
 

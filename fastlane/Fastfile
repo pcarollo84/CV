@@ -28,4 +28,10 @@ platform :ios do
               devices: ["iPhone X"],
               scheme: "CV")
   end
+
+  lane :screenshots do
+    capture_screenshots
+    upload_to_app_store
+  end
+  
 end
