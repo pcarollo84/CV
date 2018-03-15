@@ -1,0 +1,49 @@
+{
+    "areas": [
+        {
+            "name": "me",
+            "sections": [
+                {
+                    "name": "Personal Details",
+                    "rows": [
+                        {
+                            "type": "image",
+                            "title": "",
+                            "details": "profile.png"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "experience",
+            "sections": [
+                {
+                    "name": "iOS Developer",
+                    "rows": [
+                        {
+                            "type": "description",
+                            "title": "Company",
+                            "details": "PocketSizeMedia Limited"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "settings",
+            "sections": [
+                {
+                    "name": "Info",
+                    "rows": [
+                        {
+                            "type": "description",
+                            "title": "app version",
+                            "details": "$(app_version)"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
